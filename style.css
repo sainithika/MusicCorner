@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(0, 0, 0);
 }
 
 *{
@@ -14,6 +14,7 @@ nav{
 
 nav ul li{
     padding: 0 12px;
+    font-weight: bold;
 }
 
 nav ul{
@@ -21,7 +22,7 @@ nav ul{
     display: flex;
     list-style-type: none;
     height: 65px;
-    background-color: rgb(195, 254, 181);
+    background-color: rgb(164, 255, 142);
     align-items: center;
 }
 
@@ -33,20 +34,92 @@ nav ul{
 .brand {
     display: flex;
     align-items: center;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: large;
 }
 .container{
-    min-height: 75vh;
+    min-height: 72vh;
+    color: rgb(164, 255, 142);
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    padding: 34px;
+    background-image: url('Untitled.png');
+
 }
 
 .bottom{
     position: sticky;
     height: 130px;
-    background-color: rgb(195, 254, 181);
+    background-color: rgb(3, 3, 3);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+
+    margin-top: 20px;
+}
+
+.icons i{
+    color: white;
+    cursor: pointer;
+    padding: 7px;
 }
 
 #progressBar{
     width: 80vw;
+    cursor: pointer;
+}
 
+h1{
+    color: rgb(231, 231, 231);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+
+}
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: rgb(164, 255, 142);
+    margin: 24px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+
+}
+
+.songItem img{
+    width: 42px;
+    margin: 0 23px;
+    border-radius: 34px;;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+   cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    display: flex;
+    color: rgb(164, 255, 142);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
