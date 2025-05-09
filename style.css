@@ -60,13 +60,12 @@ nav ul{
 }
 
 .icons{
-
     margin-top: 20px;
 }
 
 .icons i{
-    color: white;
     cursor: pointer;
+    color: white;
     padding: 7px;
 }
 
@@ -120,6 +119,7 @@ h1{
 }
 
 .songInfo img{
+    padding: 2px;
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 0.4s ease-in;
 }
